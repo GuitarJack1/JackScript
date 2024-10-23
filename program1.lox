@@ -1,0 +1,66 @@
+/*fun hello (n){
+    if (n <= 0){
+        println (n);
+    }else{
+        hello (n - 1);
+        println (n);
+    }
+}
+
+hello (5);*/
+
+/*class Bacon {
+  eat(n) {
+    print ("Crunch crunch crunch!: " + n);
+  }
+}
+
+Bacon().eat(23);*/
+
+/*class Cake {
+  taste() {
+    var adjective = "delicious";
+    print ("The " + this.flavor + " cake is " + adjective + "!");
+  }
+}
+
+var cake = Cake();
+cake.flavor = "German chocolate";
+cake.taste(); // Prints "The German chocolate cake is delicious!".*/
+
+/*class Thing {
+  getCallback() {
+    fun localFunction() {
+      print (this);
+    }
+
+    return localFunction;
+  }
+}
+
+var callback = Thing().getCallback();
+callback();*/
+
+class Hello {
+    init (a, b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    multiplied () {
+        return this.a * this.b;
+    }
+
+    hi (n){
+        if (n <= 0){
+            println (n);
+        }else{
+            this.hi (n - 1);
+            println (n);
+        }
+    }
+}
+
+println (Hello(2, 4).multiplied());
+var hello = Hello(0, 0);
+hello.hi(5);
